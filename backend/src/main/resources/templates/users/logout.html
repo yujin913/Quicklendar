@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Logout</title>
+</head>
+<body>
+<h1>로그아웃</h1>
+<p>정말 로그아웃 하시겠습니까?</p>
+<form id="logoutForm" th:action="@{/logout}" method="post">
+    <button type="submit">로그아웃</button>
+</form>
+
+<!-- JWT 토큰 삭제 -->
+<script>
+    document.getElementById('logoutForm').addEventListener('submit', function() {
+      // 로그아웃 시 로컬 스토리지에 저장된 JWT 토큰 삭제
+      localStorage.removeItem('jwtToken');
+    });
+</script>
+
+</body>
+</html>
