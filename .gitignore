@@ -1,1 +1,83 @@
+### 공통 ###
+# OS 관련
+.DS_Store
+Thumbs.db
 
+# IDE 관련 (IntelliJ, VS Code)
+/frontend/.idea/
+/frontend/.vscode/
+/backend/.idea/
+/backend/.vscode/
+
+### frontend ###
+# 불필요한 파일
+*.class
+*.log
+*.pyc
+*.swp
+.atom/
+.buildlog/
+.history
+.svn/
+migrate_working_dir/
+
+# Node.js & Flutter/Dart 관련
+/frontend/node_modules/
+/frontend/.next/
+/frontend/.nuxt/
+/frontend/dist/
+/frontend/build/
+/frontend/.dart_tool/
+/frontend/.pub-cache/
+/frontend/.pub/
+/frontend/flutter-plugins
+/frontend/flutter-plugins-dependencies
+
+# 환경변수 및 설정 파일
+/frontend/.env
+/frontend/lib/env/env.g.dart
+
+# Symbolication & Obfuscation
+/frontend/app.*.symbols
+/frontend/app.*.map.json
+
+# Android Studio 관련 (Flutter)
+/frontend/android/app/debug
+/frontend/android/app/profile
+/frontend/android/app/release
+
+### backend ###
+# 불필요한 파일
+HELP.md
+
+# Gradle & Maven 관련
+/backend/.gradle/
+/backend/.mvn/
+/backend/build/
+/backend/out/
+/backend/target/
+
+# 예외 처리
+!backend/gradle/wrapper/gradle-wrapper.jar
+
+# 환경설정 파일 (DB 정보 포함 가능)
+/backend/src/main/resources/application.properties
+/backend/src/main/resources/application.yml
+/backend/.env
+
+# Spring 관련 캐시 파일
+/backend/.sts4-cache
+/backend/.springBeans
+/backend/bin/
+!backend/src/main/**/bin/
+!backend/src/test/**/bin/
+
+# NetBeans 관련
+/backend/nbproject/private/
+/backend/nbbuild/
+/backend/dist/
+/backend/nbdist/
+/backend/.nb-gradle/
+
+### VS Code ###
+.vscode/
